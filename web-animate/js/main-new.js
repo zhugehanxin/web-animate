@@ -132,7 +132,7 @@ $(document).ready(function() {
 			"-webkit-transition-delay":"2s",
 			"-webkit-transition-delay":"2s"
 		}), 
-		
+		 
 		I.css({
 			"-webkit-transform": "translate(-300px,760px)",
 			"-ms-transform": "translate(-300px,760px)",
