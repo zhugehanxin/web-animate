@@ -1,5 +1,13 @@
 var settime_a;
 var settime_b;
+var settime_s3a;
+var settime_s3b;
+var settime_s3c;
+var settime_s3d;
+var settime_s3e;
+var settime_s3f;
+var settime_s3g;
+var settime_s3h;
 $(document).ready(function() {
 	settime_a = function() {
 		r.css({
@@ -28,7 +36,106 @@ $(document).ready(function() {
 
 		})
 	}
-
+    
+    settime_s3a = function(){
+    	Q.css({
+			"-webkit-transform": "translate(-160px,-235px)",
+			"-ms-transform": "translate(-160px,-235px)",
+			transform: "translate(-160px,-235px)",
+			"-web-transition-duration": "0.3s",
+			"transition-duration": "0.3s",
+			"transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)',
+			"-webkit-transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)'
+		})
+    }
+    
+    settime_s3b = function(){
+    	Q.css({
+			"-webkit-transform": "translate(-160px,-250px)",
+			"-ms-transform": "translate(-160px,-250px)",
+			transform: "translate(-160px,-250px)",
+			"-web-transition-duration": "0.3s",
+			"transition-duration": "0.3s",
+			"transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)',
+			"-webkit-transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)'
+		})
+    }
+    
+    settime_s3c = function(){
+    	Q.css({
+			"-webkit-transform": "translate(-60px,-250px)",
+			"-ms-transform": "translate(-60px,-250px)",
+			transform: "translate(-60px,-250px)",
+			"-web-transition-duration": "0.3s",
+			"transition-duration": "0.3s",
+			"transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)',
+			"-webkit-transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)'
+		})
+    }
+    
+     settime_s3d = function(){
+    	Q.css({
+			"-webkit-transform": "translate(-270px,100px)",
+			"-ms-transform": "translate(-270px,100px)",
+			transform: "translate(-270px,100px)",
+			"-web-transition-duration": "0.8s",
+			"transition-duration": "0.8s",
+			"transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)',
+			"-webkit-transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)'
+		})
+    }
+     
+     settime_s3e = function(){
+    	U.css({
+			"background":"url('img/p3-phone3.png')",
+		})
+    	Q.css({
+			"-webkit-transform": "translate(-270px,80px)",
+			"-ms-transform": "translate(-270px,80px)",
+			transform: "translate(-270px,80px)",
+			"-web-transition-duration": "0.2s",
+			"transition-duration": "0.2s",
+			"transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)',
+			"-webkit-transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)'
+		})
+    }
+     
+     settime_s3f = function(){
+    	U.css({
+			"background":"url('img/p3-phone2.png')",
+		})
+    	Q.css({
+			"-webkit-transform": "translate(-270px,100px)",
+			"-ms-transform": "translate(-270px,100px)",
+			transform: "translate(-270px,100px)",
+			"-web-transition-duration": "0.2s",
+			"transition-duration": "0.2s",
+			"transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)',
+			"-webkit-transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)'
+		})
+    }
+     
+     settime_s3g = function(){
+     U.css({
+			"background":"url('img/p3-phone2.png')",
+			"-web-transition-duration": "0.4s",
+			"transition-duration": "0.4s",
+		})
+     }
+     
+     settime_s3h = function(){
+     	Q.css({
+     		"-webkit-transform": "translate(-270px,100px)",
+			"-ms-transform": "translate(-270px,100px)",
+			transform: "translate(-200px,280px)",
+			"-web-transition-duration": "0.8s",
+			"transition-duration": "0.8s",
+			opacity:0,
+			"transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)',
+			"-webkit-transition-timing-function": 'cubic-bezier(0.25, .04, 0.75, .96)'
+     	})
+     }
+     
 	function a(a, c) {
 		b(c), window.isIE6 && ($(".head").hide().css({
 			top: document.body.scrollTop + document.documentElement.scrollTop + "px"
@@ -49,13 +156,13 @@ $(document).ready(function() {
 					opacity: 1
 				}, 3e3, "easeInOutQuint"))
 
-			: (r.add(m).add(p).css("transition-duration", "3s"), r.css({
+			:  (r.css({
 					"-webkit-transform": "translate(-60px,-180px)",
 					"-ms-transform": "translate(-60px,-180px)",
 					transform: "translate(-60px,-180px)",
 					opacity: 1,
-					"-webkit-transition-duration": "1.5s",
-					"transition-duration": "1.5s"
+					"-webkit-transition-duration": "1.2s",
+					"transition-duration": "1.2s"
 				}),
 
 				m.css({
@@ -63,27 +170,28 @@ $(document).ready(function() {
 					"-ms-transform": "translate(-330px,100px)",
 					transform: "translate(-330px,100px)",
 					opacity: 1,
-					"-webkit-transition-delay":"1.5s",
-					"-webkit-transition-delay":"1.5s"
+					"-webkit-transition-duration": "1.5s",
+					"transition-duration": "1.5s",
+					"-webkit-transition-delay":"1.8s",
+					"-webkit-transition-delay":"1.8s"
 				}),
 				p.css({
 					"-webkit-transform": "translate(0,-250px)",
 					"-mstransform": "translate(0,-250px)",
 					transform: "translate(0,-250px)",
 					opacity: 1,
+					"-webkit-transition-duration": "3s",
+					"transition-duration": "3s",
 					"-webkit-transition-delay":"1.8s",
 					"transition-delay":"1.8s"
 				}),
 				setTimeout('settime_a()', 1500),
 				setTimeout('settime_b()', 2000)),
 
-			w.fadeOut(), v.fadeOut(), J.fadeOut(), K.fadeOut(), L.fadeOut(), M.fadeOut(), N.fadeOut(), O.fadeOut(), s.fadeIn(), t.fadeIn(), u.fadeIn(), k.hide(), l.hide(), j.show(), $(".g-part-bottom-des").css({
-				color: "#FFFFFF"
-			}))
+			w.fadeOut(), v.fadeOut(), J.fadeOut(), K.fadeOut(), L.fadeOut(), M.fadeOut(), N.fadeOut(), O.fadeOut(), t.fadeIn(), u.fadeIn(), k.hide(), l.hide(), j.show())
 
-		: 2 == a ? (s.fadeOut(), t.fadeOut(), u.fadeOut(), J.fadeOut(), K.fadeOut(), L.fadeOut(), M.fadeOut(), N.fadeOut(), O.fadeOut(), w.fadeIn(), v.fadeIn(), j.hide(), l.hide(), k.show(), window.isIE6 && (k.hide(), l.hide(), j.show()), $(".g-part-bottom-des").css({
-			color: "#FFFFFF"
-		}), window.ltIE10 ? (x.animate({
+		: 2 == a ? ( t.fadeOut(), u.fadeOut(), J.fadeOut(), K.fadeOut(), L.fadeOut(), M.fadeOut(), N.fadeOut(), O.fadeOut(), w.fadeIn(), v.fadeIn(), j.hide(), l.hide(), k.show(), window.isIE6 && (k.hide(), l.hide(), j.show()),
+		window.ltIE10 ? (x.animate({
 			left: "40px"
 		}, 1e3), 
 	   	G.animate({
@@ -97,11 +205,7 @@ $(document).ready(function() {
 			top: "60px"
 		}, 1500)) 
 		
-		: ($(".s2 i").css({
-			"-webkit-transition": "all  1.5s cubic-bezier(0.45, 0.32, 0.49, 0.78)",
-			transition: "all  1.5s cubic-bezier(0.45, 0.32, 0.49, 0.78)"
-		}), 
-		
+		: (		
 		x.css({
 			height: "200px",
 			width:"320px",
@@ -109,14 +213,14 @@ $(document).ready(function() {
 			bottom:"190.5px",
 			"-web-transition-duration": "1s",
 			"transition-duration": "1s",
-			"-webkit-transition-delay":"1s",
-			"-webkit-transition-delay":"1s"
+			"-webkit-transition-delay":"0.5s",
+			"-webkit-transition-delay":"0.5s"
 		}), 
 	
 		G.css({
-			"-webkit-transform": "translate(220px,770px)",
-			"-ms-transform": "translate(220px,770px)",
-			transform: "translate(230px,770px)",
+			"-webkit-transform": "translate(250px,770px)",
+			"-ms-transform": "translate(250px,770px)",
+			transform: "translate(250px,770px)",
 			"-web-transition-duration": "1.5s",
 			"transition-duration": "1.5s",
 			"-webkit-transition-delay":"2s",
@@ -124,9 +228,9 @@ $(document).ready(function() {
 		}), 
 		
 		H.css({
-			"-webkit-transform": "translate(180px,770px)",
-			"-ms-transform": "translate(180px,770px)",
-			transform: "translate(180px,770px)",
+			"-webkit-transform": "translate(230px,790px)",
+			"-ms-transform": "translate(230px,790px)",
+			transform: "translate(230px,790px)",
 			"-web-transition-duration": "1.5s",
 			"transition-duration": "1.5s",
 			"-webkit-transition-delay":"2s",
@@ -141,70 +245,92 @@ $(document).ready(function() {
 			"transition-duration": "1.5s",
 			"-webkit-transition-delay":"2s",
 			"-webkit-transition-delay":"2s"
-		}), 
+		}),
 		
-		D.css({
-			"-webkit-transform": "translate(-66px,80px)",
-			"-ms-transform": "translate(-66px,80px)",
-			transform: "translate(-66px,80px)",
-			"-web-transition-duration": "1s",
-			"transition-duration": "1s"
-		}))) 
+		F.css({
+			"-webkit-transform": "translate(150px,780px)",
+			"-ms-transform": "translate(150px,780px)",
+			transform: "translate(150px,780px)",
+			"-web-transition-duration": "1.5s",
+			"transition-duration": "1.5s",
+			"-webkit-transition-delay":"2s",
+			"-webkit-transition-delay":"2s"
+		}),
 		
-		: 3 == a ? (s.fadeOut(), t.fadeOut(), u.fadeOut(), L.fadeOut(), M.fadeOut(), N.fadeOut(), O.fadeOut(), w.fadeOut(), v.fadeOut(), J.fadeIn(), K.fadeIn(), j.hide(), k.hide(), l.show(), window.isIE6 && (k.hide(), l.hide(), j.show()), setTimeout(function() {
-			$(".g-part-bottom-des").css({
-				color: "#666666"
-			})
-		}, 400), P.animate({
-			left: "210px",
-			bottom: 0
-		}, 1e3, function() {
-			P.fadeOut(), R.fadeIn(function() {
-				U.slideDown(function() {
-					V.show(function() {
-						W.show(), S.show(), T.show(function() {
-							Q.show();
-							for (var a = 0; a < Q.length; a++) {
-								var b = Math.random(),
-									c = Math.random(),
-									d = 340,
-									e = 180;
-								Q.eq(a).animate({
-									left: d * b + 50 + "px",
-									top: e * c + 150 + "px"
-								}, 1e3 * (b + c))
-							}
-						})
-					})
-				})
-			})
-		})) : 4 == a ? (s.fadeOut(), t.fadeOut(), u.fadeOut(), N.fadeOut(), O.fadeOut(), w.fadeOut(), v.fadeOut(), J.fadeOut(), K.fadeOut(), L.fadeIn(), M.fadeIn(), j.hide(), k.hide(), l.show(), window.isIE6 && (k.hide(), l.hide(), j.show()), X.animate({
-			"margin-top": "-536px"
-		}, 2e3), Y.animate({
-			"margin-top": "-1206px"
-		}, 2150), Z.animate({
-			"margin-top": "-1876px"
-		}, 2300), _.animate({
-			"margin-top": "-2546px"
-		}, 2500, function() {
-			aa.animate({
-				left: "90px",
-				top: "110px"
-			}, 1500), setTimeout(function() {
-				ca.fadeIn()
-			}, 200), setTimeout(function() {
-				ba.fadeIn()
-			}, 400)
-		})) : 5 == a && (s.fadeOut(), t.fadeOut(), u.fadeOut(), L.fadeOut(), M.fadeOut(), w.fadeOut(), v.fadeOut(), J.fadeOut(), K.fadeOut(), N.fadeIn(), O.fadeIn(), j.hide(), k.hide(), l.show(), window.isIE6 && (k.hide(), l.hide(), j.show()), da.animate({
-			left: "-32px"
-		}, 1e3), ga.animate({
-			top: "565px"
-		}, 2e3), fa.animate({
-			top: "320px",
-			opacity: 1
-		}, 3e3, function() {
-			ea.show()
-		}))
+		E.css({
+			"-webkit-transform": "translate(170px,815px)",
+			"-ms-transform": "translate(170px,815px)",
+			transform: "translate(170px,815px)",
+			"-web-transition-duration": "1.5s",
+			"transition-duration": "1.5s",
+			"-webkit-transition-delay":"2s",
+			"-webkit-transition-delay":"2s"
+		})					
+		))
+		
+		: 3 == a ? ( t.fadeOut(), u.fadeOut(), x.fadeOut(),L.fadeOut(), M.fadeOut(), N.fadeOut(), O.fadeOut(), w.fadeOut(), v.fadeOut(), J.fadeIn(), K.fadeIn(), j.hide(), k.hide(), l.show(), window.isIE6 && (k.hide(), l.hide(), j.show()),
+		window.ltIE10 ? (Q.animate({
+			left: "40px"
+		}, 1e3) 
+	   ) 
+		: (		 
+		Q.css({
+			"-webkit-transform": "translate(-160px,-250px)",
+			"-ms-transform": "translate(-160px,-250px)",
+			transform: "translate(-160px,-250px)",
+			opacity:1,
+			"-web-transition-duration": "1.5s",
+			"transition-duration": "1.5s"
+		}),
+		setTimeout('settime_s3a()', 1500),
+		setTimeout('settime_s3b()', 1800),
+		setTimeout('settime_s3c()', 2100),	
+		setTimeout('settime_s3d()', 2800),
+		setTimeout('settime_s3g()',2200),
+		setTimeout('settime_s3e()',3700),
+		setTimeout('settime_s3f()',3900),
+		setTimeout('settime_s3h()',4100)
+		))
+		
+		: 4 == a && (t.fadeOut(), u.fadeOut(), N.fadeOut(), O.fadeOut(), w.fadeOut(), v.fadeOut(), J.fadeOut(), K.fadeOut(), L.fadeIn(), M.fadeIn(), j.hide(), k.hide(), l.show(), window.isIE6 && (k.hide(), l.hide(), j.show()),
+		window.ltIE10 ? (C.animate({
+			left: "40px"
+		}, 1e3) 
+	   ) 
+		:(		 
+		C.css({
+		"-webkit-animation-name": 'mov',
+   		"-webkit-animation-duration": "1s",
+		"-webkit-animation-timing-function": "linear",
+		"-webkit-animation-direction": "alternate",
+		"-webkit-animation-iteration-count": "2"
+		}),
+		
+		Y.css({
+		"-webkit-animation-name": 'yellow',
+   		"-webkit-animation-duration": "1s",
+		"-webkit-animation-timing-function": "linear",
+		"-webkit-animation-direction": "alternate",
+		"-webkit-animation-iteration-count": "infinite"
+		}),
+		
+		B.css({
+		"-webkit-animation-name": 'blue',
+   		"-webkit-animation-duration": "0.7s",
+		"-webkit-animation-timing-function": "linear",
+		"-webkit-animation-direction": "alternate",
+		"-webkit-animation-iteration-count": "infinite"
+		}),
+		
+		R.css({
+		"-webkit-animation-name": 'blue',
+   		"-webkit-animation-duration": "0.7s",
+		"-webkit-animation-timing-function": "linear",
+		"-webkit-animation-direction": "alternate",
+		"-webkit-animation-iteration-count": "infinite"
+		})
+		
+		))
 	}
 
 	function b(a) {
@@ -213,22 +339,15 @@ $(document).ready(function() {
 				window.ltIE10 ? (r.css({
 					top: "800px",
 					opacity: 0
-				}), o.css({
-					top: "100px",
-					opacity: 0
-				}), m.css({
-					left: "-200px",
-					opacity: 0
-				}), n.css({
+				}),  m.css({
 					left: "-200px",
 					opacity: 0
 				}), p.css({
 					left: "700px",
 					opacity: 0
-				}), q.css({
-					left: "750px",
-					opacity: 0
-				})) : r.add(m).add(o).add(n).add(p).add(q).css({
+				})) 
+				
+				: r.add(m).add(p).stop().css({
 					"-webkit-transition-duration": "0s",
 					"transition-duration": "0s",
 					"-webkit-transform": "translate(0,0)",
@@ -236,73 +355,66 @@ $(document).ready(function() {
 					transform: "translate(0,0)",
 					opacity: 0
 				});
-
+				
 				break;
 			case 2:
 				window.ltIE10 ? (x.css({
 					left: "-400px"
-				}), y.css({
-					bottom: "250px"
-				}), z.css({
-					bottom: "310px"
-				}), A.css({
-					bottom: "390px"
-				}), B.css({
-					bottom: "500px"
-				}), C.css({
-					bottom: "500px"
 				}), H.css({
 					bottom: "750px"
 				}), G.css({
 					top: "-250px"
-				}), F.css({
-					left: "0px",
-					bottom: "550px"
-				}), E.css({
-					left: "30px",
-					bottom: "550px"
 				}), I.css({
 					top: "-55px"
-				}), D.css({
-					left: "450px",
-					bottom: "480px"
-				})) : $(".s2 i").css({
+				})) 
+				
+				: (G.add(H).add(I).stop(true,true).css({
+					"-webkit-transition-duration": "0s",
+					"transition-duration": "0s",
 					"-webkit-transition": "all  0s cubic-bezier(0.61, 0.04, 0, 0.96)",
 					transition: "all  0s cubic-bezier(0.61, 0.04, 0, 0.96)",
 					"-webkit-transform": "translate(0,0)",
 					"-ms-transform": "translate(0,0)",
 					transform: "translate(0,0)"
-				});
+				}),
+				x.stop(true,true).css({
+					width:"200px",
+					height: "125px",
+					left:"52px",
+					bottom:"138px",
+					"-webkit-transition-duration": "0s",
+					"transition-duration": "0s"	
+				}));
 				break;
+				
 			case 3:
-				P.stop().css({
-					left: "400px",
-					bottom: "-65px"
-				}).show(), R.stop().hide(), U.stop().hide(), V.stop().hide(), W.stop().hide(), T.stop().hide(), S.stop().hide(), Q.stop().hide();
+				window.ltIE10 ? (Q.animate({
+					left: "-400px"
+				})) 
+				: (Q.stop().css({
+					"-webkit-transition-duration": "0s",
+					"transition-duration": "0s",
+					"-webkit-transition": "all  0s cubic-bezier(0.61, 0.04, 0, 0.96)",
+					transition: "all  0s cubic-bezier(0.61, 0.04, 0, 0.96)",
+					"-webkit-transform": "translate(0,0)",
+					"-ms-transform": "translate(0,0)",
+					transform: "translate(0,0)"
+				}),
+				U.stop().css({
+					"background":"url('img/p3-phone1.png')",
+					"-webkit-transition-duration": "0s",
+					"transition-duration": "0s"
+				}));
 				break;
+				
 			case 4:
-				X.stop().css({
-					"margin-top": "0px"
-				}), Y.stop().css({
-					"margin-top": "0px"
-				}), Z.stop().css({
-					"margin-top": "0px"
-				}), _.stop().css({
-					"margin-top": "0px"
-				}), aa.stop().css({
-					left: "390px",
-					top: "170px"
-				}), ba.stop().hide(), ca.stop().hide();
+				 window.ltIE10 ? (C.css({
+					left: "-400px"
+				})) 
+				: (C.stop().css({
+					"-webkit-animation-name": ''
+				}));
 				break;
-			case 5:
-				da.stop().css({
-					left: "-132px"
-				}), ga.stop().css({
-					top: "450px"
-				}), fa.stop().css({
-					top: "180px",
-					opacity: 0
-				}), ea.stop().hide()
 		}
 	}
 
@@ -311,9 +423,6 @@ $(document).ready(function() {
 		b.src = a, b.type = "text/javascript", document.body.appendChild(b)
 	}
 
-	function d() {
-		ka.hide()
-	}
 	var e = 450,
 		f = 0,
 		g = 1,
@@ -323,55 +432,48 @@ $(document).ready(function() {
 		k = $(".g-part-icon2"),
 		l = $(".g-part-icon3"),
 		m = $(".s1-zs"),
-		n = $(".s1-computer"),
-		o = $(".s1-cup"),
 		p = $(".s1-kh"),
-		q = $(".s1-camera"),
 		r = $(".s1-finger"),
-		s = $(".s1-top"),
+		
 		t = $(".g-part-title1"),
 		u = $(".g-part-des1"),
 		v = $(".g-part-title2"),
 		w = $(".g-part-des2"),
+		
+		
 		x = $(".s2Card"),
-		y = $(".s2Ear"),
-		z = $(".s2Pad"),
-		A = $(".s2Ping2"),
-		B = $(".s2Ping1"),
-		C = $(".s2Watch"),
-		D = $(".s2Cam2"),
-		E = $(".s2Phone"),
-		F = $(".s2Yg"),
 		G = $(".s2Phone"),
 		H = $(".s2Ipad"),
 		I = $(".s2Car"),
+		E = $(".s2-camera"),
+		F = $(".s2-pc"),
+		
 		J = $(".g-part-des3"),
 		K = $(".g-part-title3"),
 		L = $(".g-part-des4"),
 		M = $(".g-part-title4"),
 		N = $(".g-part-des5"),
 		O = $(".g-part-title5"),
-		P = $(".s3Finger"),
-		Q = $(".s3i"),
-		R = $(".s3b"),
-		S = $(".s3l"),
-		T = $(".s3r"),
-		U = $(".s3Tag"),
-		V = $(".s3lphone"),
-		W = $(".s3Light"),
-		X = $(".s4-wrap1"),
-		Y = $(".s4-wrap2"),
-		Z = $(".s4-wrap3"),
-		_ = $(".s4-wrap4"),
-		aa = $(".s4F"),
-		ba = $(".s4Q1"),
-		ca = $(".s4Q2"),
-		da = $(".s5Dt"),
-		ea = $(".s5D"),
-		fa = $(".s5P"),
-		ga = $(".s5Wt");
+		
+		U = $(".s3-phone"),
+		Q = $(".s3-finger"),
+		
+		C = $(".s4B-hat"),
+		Y = $(".s4B-stars-y"),
+		B = $(".s4B-stars-b"),
+		R = $(".s4B-stars-r")
+		;
 	a(g), addEvent(document.body, "mousewheel", function(b) {
-		b.preventDefault(), i || (i = !0, b.delta >= 0 ? 2 == g ? (e = 0, f = 2, g = 1) : 3 == g ? (e = 733, f = 3, g = 2) : 4 == g ? (e = 1508, f = 4, g = 3) : 5 == g && (e = 2295, f = 5, g = 4) : 1 == g ? (e = 733, f = 1, g = 2) : 2 == g ? (e = 1508, f = 2, g = 3) : 3 == g ? (e = 2295, f = 3, g = 4) : 4 == g && (e = 3125, f = 4, g = 5), window.ltIE10 ? $("#wrap").animate({
+		b.preventDefault(), i || (i = !0, b.delta >= 0 ? 2 == g ? (e = 0, f = 2, g = 1) 
+		: 3 == g ? (e = 733, f = 3, g = 2) 
+		: 4 == g && (e = 1508, f = 4, g = 3) 
+//		: 5 == g && (e = 2295, f = 5, g = 4) 
+		: 1 == g ? (e = 733, f = 1, g = 2) 
+		: 2 == g ? (e = 1508, f = 2, g = 3) 
+		: 3 == g && (e = 2295, f = 3, g = 4) 
+//		: 4 == g && (e = 3125, f = 4, g = 5)
+		,
+		window.ltIE10 ? $("#wrap").animate({
 			top: -e + "px"
 		}, h, "easeInOutQuint", function() {
 			i = !1, a(g, f)
@@ -385,33 +487,4 @@ $(document).ready(function() {
 			i = !1, a(g, f)
 		}, 1300)))
 	});
-	var ha = /1[3,4,5,8]\d{8}/,
-		ia = $(".dialog-content-t"),
-		ja = $(".dialog-content-d"),
-		ka = $(".dialog"),
-		la = $(".dialog-but"),
-		ma = $(".close"),
-		na = !0,
-		oa = $(".g-part-submit");
-	window.cb = function(a) {
-		1 == a ? (ia.html("发送成功"), ja.html("请在短信中点击链接，下载安装网易一元夺宝APP。"), ka.show()) : (ia.html("发送失败"), ja.html("发送失败，请用手机扫一扫屏幕中的二维码下载。"), ka.show())
-	}, la.click(d), ma.click(d), oa.click(function() {
-		if (na) {
-			var a = $(".numInput").val();
-			if (ha.test(a)) {
-				na = !1, c("http://smsspub.mail.163.com/mobileserv/fsms.do?product=oneapp&template=oneand1&mobile=" + a + "&callback=cb"), oa.css({
-					background: "#938A8B",
-					cursor: "default"
-				});
-				var b = 0,
-					d = 61,
-					e = setInterval(function() {
-						oa.html(--d), b++, b > 60 && (oa.html("发送").css({
-							background: "#dd3555",
-							cursor: "pointer"
-						}), na = !0, clearInterval(e))
-					}, 1e3)
-			} else ia.html("号码不正确"), ja.html("请重新输入或者用手机扫一扫屏幕中的二维码。"), ka.show()
-		}
-	})
 });
