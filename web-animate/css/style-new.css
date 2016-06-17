@@ -205,17 +205,17 @@ a:hover {
 .g-part {
 	position: fixed;
 	_position: absolute;
-	width: 460px;
-	left: 50%;
+	width: 560px;
+	left: 45%;
 	top: 50%;
 	z-index: 1000;
-	margin-left: 52px;
 	margin-top: -200px;
 	_top: 450px
 }
 
 .g-part-bottom {
-	margin-top: 65px
+	margin-top: 185px;
+	margin-left: 100px;
 }
 
 
@@ -249,15 +249,18 @@ a:hover {
 	display: none
 }
 
+.g-part-title1,
+.g-part-title2,
 .g-part-title3,
-.g-part-title4,
-.g-part-title5 {
-	color: #000
+.g-part-title4{
+	color: #333333
 }
 
 .g-part-title em {
 	font-size: 93px;
 	font-style: italic;
+	display: inline-block;
+	width: 70px;
 	vertical-align: -6px
 }
 
@@ -322,44 +325,23 @@ a:hover {
 	transform: translate(0px, 0)
 }
 
-
-
 .g-part-des1,
 .g-part-des2,
 .g-part-des3,
-.g-part-des4,
-.g-part-des5 {
-	height: 35px;
+.g-part-des4{
+	font-family: "bradley hand itc";
 	position: absolute;
 	left: 0;
-	top: 97px;
-	display: none
+	top: 47px;
+	display: none;
+	font-size: 35px;
+	color: #FFFFFF;
 }
-
-.g-part-des1 {
-	background-position: 0 -30px;
-	width: 351px;
-	display: block
-}
-
-.g-part-des2 {
-	background-position: 0 -813px;
-	width: 350px
-}
-
-.g-part-des3 {
-	background-position: 0 -70px;
-	width: 350px
-}
-
-.g-part-des4 {
-	background-position: 0 -115px;
-	width: 288px
-}
-
-.g-part-des5 {
-	background-position: 0 -165px;
-	width: 287px
+.g-part-des1,
+.g-part-des2,
+.g-part-des3,
+.g-part-des4{
+	color: #333333;
 }
 
 .s1-top {
@@ -369,43 +351,6 @@ a:hover {
 	position: absolute;
 	top: -25px;
 	display: none
-}
-
-
-.android,
-.iphone {
-	vertical-align: middle;
-	width: 22px;
-	height: 27px
-}
-
-.g-part-icon1 .iphone {
-	background-position: 0 0
-}
-
-.g-part-icon1 .android {
-	background-position: -22px 0
-}
-
-.g-part-icon2 .iphone {
-	background-position: -44px 0
-}
-
-.g-part-icon2 .android {
-	background-position: -66px 0
-}
-
-.g-part-icon3 .iphone {
-	background-position: -88px 0
-}
-
-.g-part-icon3 .android {
-	background-position: -110px 0
-}
-
-.g-part-icon {
-	height: 53px;
-	overflow: hidden
 }
 
 
@@ -430,7 +375,7 @@ a:hover {
 	position: absolute;
 	width: 173px;
 	height: 80px;
-	left: 300px;
+	left: 0;
 	background: url(../img/puduo.png) center top no-repeat;
 }
 
@@ -439,7 +384,7 @@ a:hover {
 	width: 23px;
 	height: 80px;
 	top: 0;
-	left: 480px;
+	left: 200px;
 	background: url(../img/p1-line.png) center top no-repeat;
 }
 
@@ -449,8 +394,7 @@ a:hover {
 	height: 80px;
 	position: absolute;
 	top: 0;
-	right: 300px;
-	/*margin-right: 140px*/
+	left: 253px;
 }
 
 
@@ -461,19 +405,21 @@ a:hover {
 	position: fixed;
 	_position: absolute;
 	top: 0;
-	width: 100%
+	width: 100%;
 }
 
 .s1-phone {
 	position: absolute;
 	left: 0;
-	top: 185px
+	top: 185px;
 }
 
 .s2 {
 	height: 775px;
+	width: 100%;
 	background: url(../img/p2-bg.jpg) center top no-repeat;
-	margin-top: 813px
+	margin-top: 813px;
+	
 }
 
 .s2Yg {
@@ -481,7 +427,7 @@ a:hover {
 	transition: all 1.5s cubic-bezier(0.45, .32, .49, .78);
 	-webkit-transform: translate(0, 0);
 	-ms-transform: translate(0, 0);
-	transform: translate(0, 0)
+	transform: translate(0, 0);
 }
 
 .s2Card {
@@ -493,7 +439,7 @@ a:hover {
 	bottom: 138px;
 	left: 52px;
 	-webkit-transition-duration: 1s;
-	transition-duration: 1s
+	transition-duration: 1s;
 }
 
 .s2Car {
@@ -505,7 +451,7 @@ a:hover {
 	top: -138px;
 	left: 552px;
 	-webkit-transition-duration: 1s;
-	transition-duration: 1s
+	transition-duration: 1s;
 }
 
 .s2Phone{
@@ -546,7 +492,7 @@ a:hover {
 	top: -158px;
 	left: -172px;
 	-webkit-transition-duration: 1s;
-	transition-duration: 1s
+	transition-duration: 1s;
 }
 
 .s2-camera{
@@ -611,6 +557,7 @@ a:hover {
 
 .s4B-hat{
 	position: absolute;
+	display: inline-block;
 	left: 135px;
 	top: 284px;
 	background: url(../img/p4-hat.png) center top no-repeat;
@@ -628,11 +575,26 @@ a:hover {
 					-webkit-transform:rotate(-10deg);
 				}
 			}
+			
+@keyframes mov {
+				0% {
+					transform:rotate(-10deg);
+				}
+				50% {
+					transform:rotate(10deg);
+				}
+				100% {
+					transform:rotate(-10deg);
+				}
+			}
+
+
 
 .s4B-stars-y{
 	position: absolute;
 	left: -15px;
 	top: 194px;
+	opacity: 0;	
 	background: url(../img/p4-point-yellow.png) center top no-repeat;
 	width: 425px;
 	height: 183px;	
@@ -649,13 +611,27 @@ a:hover {
 					left: 50px;;
 			}
            }
+           
+@keyframes yellow {
+				0% {
+					left: 50px;
+				}
+				50% {
+					left: -10px;;
+				}
+				100% {
+					left: 50px;;
+			}
+           }
+
 .s4B-stars-b{
 	position: absolute;
 	left: 0px;
 	top: 200px;
 	background: url(../img/p4-point-blue.png) center top no-repeat;
 	width: 326px;
-	height: 164px;	
+	height: 164px;
+	opacity: 0;	
 }
 
 @-webkit-keyframes blue {
@@ -663,16 +639,30 @@ a:hover {
 					left: -20px;
 				}
 				50% {
-					left: 10px;;
+					left: 59px;;
 				}
 				100% {
 					left: -20px;;
 			}
 		}
+		
+@keyframes blue {
+				0% {
+					left: -20px;
+				}
+				50% {
+					left: 59px;;
+				}
+				100% {
+					left: -20px;;
+			}
+		}
+				
 .s4B-stars-r{
 	position: absolute;
 	left: 25px;
 	top: 194px;
+	opacity: 0;	
 	background: url(../img/p4-point-red.png) center top no-repeat;
 	width: 185px;
 	height: 200px;	
@@ -680,105 +670,65 @@ a:hover {
 
 @-webkit-keyframes red {
 				0% {
-					left: -10px;
-					top: 10px;
+					left: 105px;
 				}
 				50% {
-					left: 150px;
-					top: 0px;
+					left: 10px;
 				}
 				100% {
-					left: -10px;
-					top: 10px;
+					left: 100px;
+			}
+        }
+        
+@keyframes red {
+				0% {
+					left: 105px;
+				}
+				50% {
+					left: 10px;
+				}
+				100% {
+					left: 100px;
 			}
         }
 
-
-
-
-
-
-
-
-
-
-/*丢弃的css*/
-/*
-.g-part-bottom {
-	margin-top: 65px
+.s5-footer {
+	width: 100%;
+	height: 135px;
+	line-height: 135px;
+	background: #363b48;
+	position: absolute;
+	bottom: -135px;
 }
 
-.g-part-bottom-des {
-	font-size: 21px;
-	color: #fff
-}
-
-.g-part-bottom-right {
-	float: left;
-	margin-top: 15px
-}
-
-.g-part-input {
-	width: 284px;
-	height: 53px;
-	line-height: 53px;
-	border: 1px solid #909eaa;
-	border-radius: 7px;
-	background: rgba(255, 255, 255, .7);
-	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF, endColorstr=#B2FFFFFF);
-	margin: 10px 0 15px
-}
-
-.g-part-input input {
-	margin-left: 15px;
-	width: 180px;
-	border: none;
-	font-size: 21px;
-	color: #666;
-	background: url(repeat.png);
-	vertical-align: middle;
-	_margin-top: 10px
-}
-
-.g-part-input input:focus {
-	border: none;
-	outline: 0
-}
-
-.g-part-submit {
-	width: 63px;
-	line-height: 44px;
-	height: 44px;
-	border-radius: 7px;
-	font-size: 16px;
-	color: #fff;
-	background: #dd3555;
+.s5-footer p {
+	height: 135px;
 	text-align: center;
-	float: right;
-	margin: 5px 10px 0 0
+	font-family: Sim Sum;
+	font-size: 14px;
+	color: #fefeff
 }
 
-.g-part-iphone {
-	color: #face57;
-	font-size: 13px;
-	vertical-align: bottom;
-	margin-left: 8px;
-	margin-right: 30px
+.s5-footer span {
+	margin: 0 10px
 }
 
-.g-part-android {
-	color: #91cd2f;
-	font-size: 13px;
-	vertical-align: bottom;
-	margin-left: 3px
+
+
+/*iconfont图标*/
+@font-face {font-family: "iconfont";
+  src: url('../fontsize/iconfont.eot?t=1465287217'); /* IE9*/
+  src: url('../fontsize/iconfont.eot?t=1465287217#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fontsize/iconfont.woff?t=1465287217') format('woff'), /* chrome, firefox */
+  url('../fontsize/iconfont.ttf?t=1465287217') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fontsize/iconfont.svg?t=1465287217#iconfont') format('svg'); /* iOS 4.1- */
 }
 
-.g-part-icon2 .g-part-android,
-.g-part-icon2 .g-part-iphone {
-	color: #fff
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:18px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-.g-part-icon3 .g-part-android,
-.g-part-icon3 .g-part-iphone {
-	color: #666
-}*/
